@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="VacunasDB" Class="ConexionDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-06OFUP57\SQLEXPRESS;Initial Catalog=VacunasDB;Integrated Security=True" SettingsObjectName="Vacunas.DataAccess.Properties.Settings" SettingsPropertyName="VacunasDBConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.sp_ListEmpl" Method="sp_ListEmpl">
+    <ElementType Name="sp_ListEmplResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EmpName" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="EmpRange" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Condition" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_DelOwner" Method="sp_DelOwner">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_DelPet" Method="sp_DelPet">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_DelVac" Method="sp_DelVac">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_ListEmpl" Method="sp_ListEmpl1">
+    <ElementType Name="sp_ListEmplResult1">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EmpName" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="EmpRange" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Condition" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_ListHis" Method="sp_ListHis">
+    <ElementType Name="sp_ListHisResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PetName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="PetWeight" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PetStage" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="VacName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="VacDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="EmpName" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Observations" Type="System.String" DbType="VarChar(400)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_ListOwner" Method="sp_ListOwner">
+    <ElementType Name="sp_ListOwnerResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OwnerName" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="Char(16) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="AdData" Type="System.String" DbType="VarChar(400)" CanBeNull="true" />
+      <Column Name="Condition" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_ListPet" Method="sp_ListPet">
+    <ElementType Name="sp_ListPetResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PetName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Breed" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="DateBirth" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="AdData" Type="System.String" DbType="VarChar(400)" CanBeNull="true" />
+      <Column Name="OwnerName" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Condition" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_ListUser" Method="sp_ListUser">
+    <ElementType Name="sp_ListUserResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="UsPassword" Type="System.Data.Linq.Binary" DbType="VarBinary(500) NOT NULL" CanBeNull="false" />
+      <Column Name="EmpName" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Condition" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_ListVac" Method="sp_ListVac">
+    <ElementType Name="sp_ListVacResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VacName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Pathogen" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Condition" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Login" Method="sp_Login">
+    <Parameter Name="UserName" Parameter="userName" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Password" Parameter="password" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_ModOwner" Method="sp_ModOwner">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="AdData" Parameter="adData" Type="System.String" DbType="VarChar(400)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_NewEmployee" Method="sp_NewEmployee">
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="EmpRange" Parameter="empRange" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="VarChar(150)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_NewOwner" Method="sp_NewOwner">
+    <Parameter Name="OwnerName" Parameter="ownerName" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="PhoneNumber" Parameter="phoneNumber" Type="System.String" DbType="Char(16)" />
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="AdData" Parameter="adData" Type="System.String" DbType="VarChar(400)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_NewPet" Method="sp_NewPet">
+    <Parameter Name="PetName" Parameter="petName" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Breed" Parameter="breed" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Gender" Parameter="gender" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="DateB" Parameter="dateB" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="Comments" Parameter="comments" Type="System.String" DbType="VarChar(400)" />
+    <Parameter Name="OwnerName" Parameter="ownerName" Type="System.String" DbType="VarChar(150)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_NewUser" Method="sp_NewUser">
+    <Parameter Name="EmpName" Parameter="empName" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="UserName" Parameter="userName" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Password" Parameter="password" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_NewVaccine" Method="sp_NewVaccine">
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Pathogen" Parameter="pathogen" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_DelEmployee" Method="sp_DelEmployee">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_NewHist" Method="sp_NewHist">
+    <Parameter Name="PetName" Parameter="petName" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="PetWeight" Parameter="petWeight" Type="System.Double" DbType="Float" />
+    <Parameter Name="Stage" Parameter="stage" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="VacName" Parameter="vacName" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="VacDate" Parameter="vacDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="EmpName" Parameter="empName" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="Observations" Parameter="observations" Type="System.String" DbType="VarChar(400)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

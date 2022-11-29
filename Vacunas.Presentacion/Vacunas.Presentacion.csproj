@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{881EEE5C-F45E-491F-AD10-EEB17CDE23D0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Vacunas.Presentacion</RootNamespace>
+    <AssemblyName>Vacunas.Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Inicio\Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio\Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\Employee\Frm_ListEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\Employee\Frm_ListEmployee.Designer.cs">
+      <DependentUpon>Frm_ListEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\Employee\Frm_NewEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\Employee\Frm_NewEmployee.Designer.cs">
+      <DependentUpon>Frm_NewEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\Employee\Frm_NewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\Employee\Frm_NewUser.Designer.cs">
+      <DependentUpon>Frm_NewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\Owner\Frm_ListOwner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\Owner\Frm_ListOwner.Designer.cs">
+      <DependentUpon>Frm_ListOwner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\Owner\Frm_NewOwner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\Owner\Frm_NewOwner.Designer.cs">
+      <DependentUpon>Frm_NewOwner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\Pet\Frm_ListHistorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\Pet\Frm_ListHistorial.Designer.cs">
+      <DependentUpon>Frm_ListHistorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\Pet\Frm_ListPet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\Pet\Frm_ListPet.Designer.cs">
+      <DependentUpon>Frm_ListPet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\Pet\Frm_NewPet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\Pet\Frm_NewPet.Designer.cs">
+      <DependentUpon>Frm_NewPet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\Pet\Frm_RegHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\Pet\Frm_RegHistory.Designer.cs">
+      <DependentUpon>Frm_RegHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\SubMenu\Frm_EmployeeMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\SubMenu\Frm_EmployeeMenu.Designer.cs">
+      <DependentUpon>Frm_EmployeeMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\SubMenu\Frm_OwnerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\SubMenu\Frm_OwnerMenu.Designer.cs">
+      <DependentUpon>Frm_OwnerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\SubMenu\Frm_PetMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\SubMenu\Frm_PetMenu.Designer.cs">
+      <DependentUpon>Frm_PetMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\Frm_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\Frm_Principal.Designer.cs">
+      <DependentUpon>Frm_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\SubMenu\Frm_VaccineMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\SubMenu\Frm_VaccineMenu.Designer.cs">
+      <DependentUpon>Frm_VaccineMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\Vaccine\Frm_ListVaccine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\Vaccine\Frm_ListVaccine.Designer.cs">
+      <DependentUpon>Frm_ListVaccine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\Vaccine\Frm_NewVaccine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\Vaccine\Frm_NewVaccine.Designer.cs">
+      <DependentUpon>Frm_NewVaccine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Inicio\Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\Employee\Frm_ListEmployee.resx">
+      <DependentUpon>Frm_ListEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\Employee\Frm_NewEmployee.resx">
+      <DependentUpon>Frm_NewEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\Employee\Frm_NewUser.resx">
+      <DependentUpon>Frm_NewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\Owner\Frm_ListOwner.resx">
+      <DependentUpon>Frm_ListOwner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\Owner\Frm_NewOwner.resx">
+      <DependentUpon>Frm_NewOwner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\Pet\Frm_ListHistorial.resx">
+      <DependentUpon>Frm_ListHistorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\Pet\Frm_ListPet.resx">
+      <DependentUpon>Frm_ListPet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\Pet\Frm_NewPet.resx">
+      <DependentUpon>Frm_NewPet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\Pet\Frm_RegHistory.resx">
+      <DependentUpon>Frm_RegHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\SubMenu\Frm_EmployeeMenu.resx">
+      <DependentUpon>Frm_EmployeeMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\SubMenu\Frm_OwnerMenu.resx">
+      <DependentUpon>Frm_OwnerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\SubMenu\Frm_PetMenu.resx">
+      <DependentUpon>Frm_PetMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\Frm_Principal.resx">
+      <DependentUpon>Frm_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\SubMenu\Frm_VaccineMenu.resx">
+      <DependentUpon>Frm_VaccineMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\Vaccine\Frm_ListVaccine.resx">
+      <DependentUpon>Frm_ListVaccine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\Vaccine\Frm_NewVaccine.resx">
+      <DependentUpon>Frm_NewVaccine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Vacunas.Domain\Vacunas.Domain.csproj">
+      <Project>{a6c16d31-913b-412c-b0df-0121dbbb4752}</Project>
+      <Name>Vacunas.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\icons8-cerrar-ventana-50.png" />
+    <Content Include="Resources\icons8-minimizar-la-ventana-48.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,6 @@
+C:\Users\jesus\source\repos\AppWinVacunas\Vacunas.Entity\bin\Debug\Vacunas.Entity.dll
+C:\Users\jesus\source\repos\AppWinVacunas\Vacunas.Entity\bin\Debug\Vacunas.Entity.pdb
+C:\Users\jesus\source\repos\AppWinVacunas\Vacunas.Entity\obj\Debug\Vacunas.Entity.csproj.AssemblyReference.cache
+C:\Users\jesus\source\repos\AppWinVacunas\Vacunas.Entity\obj\Debug\Vacunas.Entity.csproj.CoreCompileInputs.cache
+C:\Users\jesus\source\repos\AppWinVacunas\Vacunas.Entity\obj\Debug\Vacunas.Entity.dll
+C:\Users\jesus\source\repos\AppWinVacunas\Vacunas.Entity\obj\Debug\Vacunas.Entity.pdb

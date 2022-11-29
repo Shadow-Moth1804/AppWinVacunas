@@ -1,0 +1,7 @@
+C:\Users\jesus\source\repos\AppWinVacunas\Vacunas.DataAccess\bin\Debug\Vacunas.DataAccess.dll.config
+C:\Users\jesus\source\repos\AppWinVacunas\Vacunas.DataAccess\bin\Debug\Vacunas.DataAccess.dll
+C:\Users\jesus\source\repos\AppWinVacunas\Vacunas.DataAccess\bin\Debug\Vacunas.DataAccess.pdb
+C:\Users\jesus\source\repos\AppWinVacunas\Vacunas.DataAccess\obj\Debug\Vacunas.DataAccess.csproj.AssemblyReference.cache
+C:\Users\jesus\source\repos\AppWinVacunas\Vacunas.DataAccess\obj\Debug\Vacunas.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\jesus\source\repos\AppWinVacunas\Vacunas.DataAccess\obj\Debug\Vacunas.DataAccess.dll
+C:\Users\jesus\source\repos\AppWinVacunas\Vacunas.DataAccess\obj\Debug\Vacunas.DataAccess.pdb
